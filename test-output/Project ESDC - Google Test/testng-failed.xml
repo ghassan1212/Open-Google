@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Project ESDC - Google Test]" parallel="methods">
+  <test thread-count="1" name="testdemo(failed)" parallel="methods">
+    <parameter name="googleUrl" value="https://google.com"/>
+    <parameter name="searchkey" value="maven framework"/>
+    <parameter name="yahooUrl" value="https://yahoo.com"/>
+    <classes>
+      <class name="testclasses.GoogleTest">
+        <methods>
+          <include name="baseSuiteInit"/>
+          <include name="Test_Google_Page" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="AfterMethod"/>
+          <include name="baseClassInit"/>
+          <include name="googleClassInit"/>
+          <include name="baseTestInit"/>
+        </methods>
+      </class> <!-- testclasses.GoogleTest -->
+    </classes>
+  </test> <!-- testdemo(failed) -->
+</suite> <!-- Failed suite [Project ESDC - Google Test] -->

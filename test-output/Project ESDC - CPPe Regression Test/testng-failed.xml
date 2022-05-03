@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Project ESDC - CPPe Regression Test]" parallel="classes">
+  <parameter name="baseUrl" value="https://itrds-web-s.intra.dev/stream2/cs/"/>
+  <parameter name="password" value="BIRDNEST"/>
+  <parameter name="username" value="SESIT851"/>
+  <test thread-count="5" name="Test ITRDS Home Page(failed)" parallel="classes">
+    <classes>
+      <class name="itrdstest.AppTest">
+        <methods>
+          <include name="baseSuiteInit"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="Test_ITRDS_English_Login_Logout"/>
+          <include name="baseClassInit"/>
+          <include name="baseTestInit"/>
+        </methods>
+      </class> <!-- itrdstest.AppTest -->
+    </classes>
+  </test> <!-- Test ITRDS Home Page(failed) -->
+</suite> <!-- Failed suite [Project ESDC - CPPe Regression Test] -->

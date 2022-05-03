@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Project ESAS]" parallel="methods">
+  <test thread-count="1" name="testdemo(failed)" parallel="methods">
+    <parameter name="englishUrl" value="http://www.google.com"/>
+    <parameter name="frenchUrl" value="http://www.yahoo.com"/>
+    <classes>
+      <class name="testclasses.EnglishTest">
+        <methods>
+          <include name="baseSuiteInit"/>
+          <include name="afterClass"/>
+          <include name="englishClassInit"/>
+          <include name="Test_English_Page"/>
+          <include name="afterSuite"/>
+          <include name="AfterMethod"/>
+          <include name="baseClassInit"/>
+          <include name="baseTestInit"/>
+        </methods>
+      </class> <!-- testclasses.EnglishTest -->
+      <class name="testclasses.FrenchTest">
+        <methods>
+          <include name="baseSuiteInit"/>
+          <include name="frenchClassInit"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="Test_French_Page"/>
+          <include name="AfterMethod"/>
+          <include name="baseClassInit"/>
+          <include name="baseTestInit"/>
+        </methods>
+      </class> <!-- testclasses.FrenchTest -->
+    </classes>
+  </test> <!-- testdemo(failed) -->
+</suite> <!-- Failed suite [Project ESAS] -->
